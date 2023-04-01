@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bisines Automatization Task</string>
+    <string name="title_home">Каталог</string>
+    <string name="title_dashboard">Магазины</string>
+    <string name="title_notifications">Расположение</string>
+    <string name="load_indicator_title">Загрузка</string>
+    <string name="see_maps">на карте</string>
+    <string name="town">Город: </string>
+    <string name="address">Адрес: </string>
+
+</resources>
