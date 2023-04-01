@@ -21,8 +21,13 @@ android {
 
     buildTypes {
 
+        def BASEURL = "BASEURL"
+        debug{
+            buildConfigField "String", "BASEURL", "\"http://195.69.218.233:54000/Test/\""
+        }
+
         release {
-            
+            buildConfigField "String", "BASEURL", "\"http://195.69.218.233:54000/Test/\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }

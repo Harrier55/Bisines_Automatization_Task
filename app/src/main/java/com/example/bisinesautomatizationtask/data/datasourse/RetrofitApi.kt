@@ -1,16 +1,15 @@
 package com.example.bisinesautomatizationtask.data.datasourse
 
+import com.example.bisinesautomatizationtask.BuildConfig
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
-
-const val BASEURL = "http://195.69.218.233:54000/Test/"
 
 object RetrofitApi {
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASEURL)
+            .baseUrl(BuildConfig.BASEURL)
             .addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
