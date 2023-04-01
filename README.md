@@ -3,7 +3,7 @@
 формат изображения -  Base64
 Список сагазинов отображает название и адрес. При нажании на магазим его геопозиция отображается на карте.
 
-Технологии: Jetpack Compose, Fragment, Navigation component, MVVM, Coroutines, Flow, Retrofit,Clean archtecture
+Технологии: Jetpack Compose, Fragment, Navigation component, MVVM, Koin, Coroutines, Flow, Retrofit,Clean archtecture
 
 Screenshots:
 
