@@ -1,4 +1,4 @@
-package com.example.bisinesautomatizationtask.data
+package com.example.bisinesautomatizationtask.data.localstore
 
 import com.example.bisinesautomatizationtask.data.datasourse.ApiStatus
 import com.example.bisinesautomatizationtask.data.datasourse.DressSourceEntity

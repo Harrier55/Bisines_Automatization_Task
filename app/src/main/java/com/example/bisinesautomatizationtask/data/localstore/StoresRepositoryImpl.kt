@@ -1,4 +1,4 @@
-package com.example.bisinesautomatizationtask.data
+package com.example.bisinesautomatizationtask.data.localstore
 
 import com.example.bisinesautomatizationtask.data.datasourse.ApiStatus
 import com.example.bisinesautomatizationtask.data.datasourse.StoriesSourceEntity
@@ -9,7 +9,7 @@ import com.example.bisinesautomatizationtask.features.stores.domain.models.Store
 
 class StoresRepositoryImpl(private val webConnection: WebConnection) : StoresRepository {
 
-    private val cashListStoriesEntity = mutableListOf<StoresEntity>()
+    private var cashListStoriesEntity = mutableListOf<StoresEntity>()
 
     override fun getLocalData(): List<StoresEntity> {
         return cashListStoriesEntity
@@ -32,7 +32,7 @@ class StoresRepositoryImpl(private val webConnection: WebConnection) : StoresRep
     }
 
     override fun update(inputList: List<StoresEntity>) {
-        //  TODO("Not yet implemented")
+        cashListStoriesEntity = inputList as MutableList<StoresEntity>
     }
 
     private fun mapSourceEntityToStoresEntity(inputList: List<StoriesSourceEntity>): List<StoresEntity> {

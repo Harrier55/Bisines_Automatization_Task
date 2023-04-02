@@ -1,7 +1,7 @@
 package com.example.bisinesautomatizationtask.data.di
 
-import com.example.bisinesautomatizationtask.data.DressRepositoryImpl
-import com.example.bisinesautomatizationtask.data.StoresRepositoryImpl
+import com.example.bisinesautomatizationtask.data.localstore.DressRepositoryImpl
+import com.example.bisinesautomatizationtask.data.localstore.StoresRepositoryImpl
 import com.example.bisinesautomatizationtask.data.datasourse.WebConnection
 import com.example.bisinesautomatizationtask.features.dress.domain.repository.DressRepository
 import com.example.bisinesautomatizationtask.features.stores.domain.repositories.StoresRepository

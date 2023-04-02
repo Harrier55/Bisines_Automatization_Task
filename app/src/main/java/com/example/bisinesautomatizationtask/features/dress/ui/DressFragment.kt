@@ -90,9 +90,9 @@ private fun CardDress(entity: DressEntity) {
         ) {
             Box(
                 modifier = Modifier
+                    .padding(16.dp)
                     .wrapContentHeight()
                     .fillMaxWidth(),
-
                 contentAlignment = Alignment.Center
             ) {
                 entity.picture?.let { ImageLoader(stringBase64 = it) }
