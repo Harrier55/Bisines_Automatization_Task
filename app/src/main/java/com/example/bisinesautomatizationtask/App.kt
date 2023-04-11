@@ -1,8 +1,10 @@
-package com.example.bisinesautomatizationtask.core
+package com.example.bisinesautomatizationtask
 
 import android.app.Application
 import com.example.bisinesautomatizationtask.data.di.dataModule
-import com.example.bisinesautomatizationtask.features.di.homeModule
+
+import com.example.bisinesautomatizationtask.features.dress.di.dressModule
+import com.example.bisinesautomatizationtask.features.stores.di.storesModule
 import com.yandex.mapkit.MapKitFactory
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -22,8 +24,9 @@ class App: Application() {
             androidContext(this@App)
             androidLogger()
             modules(listOf(
-                homeModule,
-                dataModule
+                dressModule,
+                dataModule,
+                storesModule
             ))
         }
     }

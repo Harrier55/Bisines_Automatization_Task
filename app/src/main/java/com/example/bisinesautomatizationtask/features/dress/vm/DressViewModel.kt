@@ -11,6 +11,8 @@ import kotlinx.coroutines.launch
 
 class DressViewModel(private val useCase: GetDressListUseCase) : ViewModel() {
 
+
+
     private val _viewState = MutableLiveData<DressViewState>()
     val viewState: LiveData<DressViewState> = _viewState
 

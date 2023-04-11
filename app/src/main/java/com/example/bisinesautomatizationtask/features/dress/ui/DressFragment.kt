@@ -22,9 +22,9 @@ import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import com.example.bisinesautomatizationtask.core.theme.ComposeMaterialTheme
-import com.example.bisinesautomatizationtask.features.LoadIndicator
+import com.example.bisinesautomatizationtask.core.LoadIndicator
 import com.example.bisinesautomatizationtask.features.dress.domain.models.DressEntity
-import com.example.bisinesautomatizationtask.features.dress.ImageLoader
+import com.example.bisinesautomatizationtask.core.ImageLoader
 import com.example.bisinesautomatizationtask.features.dress.vm.DressViewModel
 import org.koin.androidx.compose.koinViewModel
 

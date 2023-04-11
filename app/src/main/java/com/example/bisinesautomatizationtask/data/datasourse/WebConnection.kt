@@ -9,7 +9,7 @@ class WebConnection {
     private val api by lazy { RetrofitApi.getApi() }
     private val headers = mapOf("1CSVC" to "PeplosSVC#2022")
 
-    suspend fun getStoresList(): ApiResult<List<StoriesSourceEntity>>{
+    suspend fun getStoresList(): ApiResult<List<StoriesSourceEntity>> {
         return try {
             val response = api.getStores(headers)
 //             Log.d("@@@", "getStoresList: OK  ${response.body()}")

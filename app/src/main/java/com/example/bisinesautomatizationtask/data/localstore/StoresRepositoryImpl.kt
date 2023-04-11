@@ -40,6 +40,7 @@ class StoresRepositoryImpl(private val webConnection: WebConnection) : StoresRep
         inputList.forEach { storiesSourceEntity ->
             outputList.add(
                 StoresEntity(
+                    id = getRandomId(),
                     name = storiesSourceEntity.name,
                     longitude = storiesSourceEntity.longitude,
                     latitude = storiesSourceEntity.latitude,
@@ -48,6 +49,17 @@ class StoresRepositoryImpl(private val webConnection: WebConnection) : StoresRep
             )
         }
         return outputList
+    }
+
+    override fun getStoreById(id: Double): StoresEntity? {
+        cashListStoriesEntity.forEach {storesEntity ->
+            if(storesEntity.id == id) return storesEntity
+        }
+        return null
+    }
+
+    private fun getRandomId(): Double{
+        return  Math.random()
     }
 
 }

@@ -1,4 +1,4 @@
-package com.example.bisinesautomatizationtask.features.dress
+package com.example.bisinesautomatizationtask.core
 
 import android.graphics.BitmapFactory
 import android.util.Base64

@@ -27,7 +27,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.bisinesautomatizationtask.R
 import com.example.bisinesautomatizationtask.core.theme.ComposeMaterialTheme
-import com.example.bisinesautomatizationtask.features.LoadIndicator
+import com.example.bisinesautomatizationtask.core.LoadIndicator
 import com.example.bisinesautomatizationtask.features.stores.domain.models.StoresEntity
 import com.example.bisinesautomatizationtask.features.stores.vm.StoresViewModel
 import org.koin.androidx.compose.koinViewModel
@@ -58,7 +58,7 @@ class StoresFragment : Fragment() {
 
 @Composable
 private fun StoragesScreen(
-context: Context,
+    context: Context,
     viewModel: StoresViewModel = koinViewModel()
 ) {
 
@@ -76,10 +76,12 @@ context: Context,
                 ItemStore(storesEntity,
                     onButtonClick = {
                         val activity = context as? AppCompatActivity
-                        val navController =  activity?.findNavController(R.id.nav_host_fragment_activity_main)
+                        val navController =
+                            activity?.findNavController(R.id.nav_host_fragment_activity_main)
                         val bundle = Bundle()
                         storesEntity.longitude?.let { bundle.putDouble(LONGITUDE, it) }
                         storesEntity.latitude?.let { bundle.putDouble(LATITUDE, it) }
+                        storesEntity.id?.let { bundle.putDouble("id", it) }
                         navController?.navigate(R.id.navigation_notifications, bundle)
                     })
                 Spacer(Modifier.size(16.dp))
