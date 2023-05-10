@@ -17,5 +17,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Bisines Automatization Task"
 include ':app'
-include ':data'
-include ':dress_feature'
+include ':core_module'
+include ':data:datasourse'
+include ':feature_dress'
+include ':feature_stores'

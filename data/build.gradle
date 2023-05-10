@@ -38,6 +38,9 @@ android {
 
 dependencies {
 
+    // modules
+//    implementation project(path: ':feature_dress')
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
@@ -53,7 +56,6 @@ dependencies {
     implementation "io.insert-koin:koin-core:3.2.1"
     implementation "io.insert-koin:koin-android:3.2.1"
 
-    implementation project(path: ':dress_feature')
 
     // retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
